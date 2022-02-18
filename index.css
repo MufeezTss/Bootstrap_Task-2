@@ -408,7 +408,7 @@ body{
     border-radius: 0;
     font-size: 14px;
     border: none;
-    color: white;
+    color: rgb(14, 14, 14);
   }
   .contact .contact-email-form button[type=submit] {
     background: #cda45e;
