@@ -1,5 +1,8 @@
+body{
+    cursor: pointer;
+}
 .navbar{
-    opacity: 0.7;
+    opacity: 0.8;
 }
 #navbar-logo a{
   font-size: 28px;
@@ -15,7 +18,9 @@
     color: #cda45e;
     padding: 20px;
 }
-
+.navbar .navbar-nav li{
+    font-size: 18px;
+}
 /* Section-01 */
 
 #hero {
@@ -103,12 +108,12 @@
     position: relative;
     box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
-.about .about-img img {
+.about .about-img img{
     max-width: 100%;
     position: relative;
 }
 .about .about-img:hover{
-    margin: 4px;
+    transform: scale(1.05);
 }
 .about .content h3 {
     font-weight: 600;
@@ -133,19 +138,45 @@
     color: #fff;
 }
 
+/* Section Common Styles */
+
+.section-title {
+    padding-bottom: 40px;
+  }
+  .section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+  }
+  .section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 4px 10px;
+  }
+  .section-title p {
+    margin: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    color: #c5871e;
+  }
+  
+/*  */
+
 /* Section-03 */
 
 .why-us{
     background-color:#ccbea7 ;
-}
-.why-us .sec-title{
-    padding-bottom: 40px;
-    color: #141414;
-    font-weight: 600;
-    font-family: revert;
-}
-.why-us .sec-title h2{
-    color: #cc9330;
 }
 .why-us .box {
   padding: 50px 30px;
@@ -184,18 +215,8 @@
 /* Section-04 */
 
 .menu{
-    background-color: rgb(170, 113, 113);
+    background-image: linear-gradient(45deg, #281c10, #cdbf1a3d);
 }
-.menu .sec-title{
-    padding-bottom: 40px;
-    color: #141414;
-    font-weight: 600;
-    font-family: revert;
-}
-.menu .sec-title h2{
-    color: #cc9330;
-}
-/*  */
 .menu #menu-flters {
     padding: 0;
     margin: 0 auto 0 auto;
@@ -207,7 +228,7 @@
     cursor: pointer;
     display: inline-block;
     padding: 8px 10px 10px 12px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 1;
     color: #fff;
@@ -242,3 +263,175 @@
 .menu-content .card-body:hover{
     opacity: 0.9;
 }
+
+/* Section-05 */
+
+.events{
+    background-color: #504838;
+}
+.events .event-item {
+    color: #fff;
+}
+.events .event-item h3 {
+    font-weight: 600;
+    font-size: 26px;
+    color: #cda45e;
+}
+.events .event-item ul {
+    list-style: none;
+    padding: 0;
+}
+.events .event-item ul li {
+    padding-bottom: 10px;
+}
+.events .event-item ul i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: #cda45e;
+}
+
+/* Section-06 */
+
+.book-a-table{
+   background-color: #7a715e;
+}
+.book-a-table .email-form {
+    width: 100%;
+}
+.book-a-table .email-form .form-group {
+    padding-bottom: 8px;
+}
+.book-a-table .email-form input {
+    height: 44px;
+}
+.book-a-table .email-form textarea {
+    padding: 10px 12px;
+}
+.book-a-table .php-email-form input, .book-a-table .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    background: #0c0b09;
+    border-color: #625b4b;
+    color: white;
+}
+.book-a-table .email-form button[type=submit] {
+    background: #cda45e;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+.book-a-table .email-form button[type=submit]:hover {
+    background: #79571d;
+}
+
+/* Section-07 */
+
+.chefs{
+    background-color: #504838;
+}
+.chefs .chefs-member {
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 4px;
+    text-align: center;
+    margin-bottom: 20px;
+    background: #8895a1;
+    position: relative;
+    overflow: hidden;
+}
+.chefs .chefs-member .chefs-info-content h4{
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: #fff;
+}
+.chefs .chefs-member .chefs-info-content span{
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+    color: #fff;
+}
+.chefs .chefs-member .social a {
+    transition: color 0.3s;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    padding: 5px 0 5px 0;
+}
+.chefs .chefs-member .social a:hover {
+    color: #cda45e;
+}
+.chefs .chefs-member .social i {
+    font-size: 18px;
+    margin: 0 2px;
+}
+
+/* Section-08 */
+
+.contact{
+    background-color: #7a715e;
+}
+.contact .info i {
+    font-size: 20px;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #cda45e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+  }
+  .contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #bab3a6;
+  }
+  .contact .info .open-hours, .contact .info .email, .contact .info .phone {
+    margin-top: 40px;
+  }
+  .contact .contact-email-form .form-group {
+    padding-bottom: 8px;
+  }
+  .contact .contact-email-form input, .contact .contact-email-form textarea{
+    border-radius: 0;
+    font-size: 14px;
+    border: none;
+    color: white;
+  }
+  .contact .contact-email-form button[type=submit] {
+    background: #cda45e;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  .contact .contact-email-form button[type=submit]:hover {
+    background: #79571d;
+  }
+
+  /* Footer */
+
+  #footer .copyright {
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+  }
+  #footer .credits {
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+  }
