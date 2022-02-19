@@ -33,7 +33,7 @@ body{
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("./imgs/hero-bg.jpg") top center;
+    background: url("../css/Css imgs/hero-bg.jpg") top center;
     background-attachment: fixed;
     background-size: cover;
     position: relative;
@@ -95,7 +95,7 @@ body{
 /* Section-02 */
 
 .about {
-    background-image: url(./imgs/about-bg.jpg);
+    background-image: url("../css/Css imgs/about-bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
