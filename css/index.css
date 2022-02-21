@@ -74,7 +74,7 @@ body{
 }
 #hero h2 {
     color: #eee;
-    margin-bottom: 10px 0 0 0;
+    padding: 10px;
     font-size: 22px;
 }
 #hero .btns {
@@ -108,17 +108,10 @@ body{
     position: relative;
     padding: 80px 0;
 }
-.about:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-}
 .about .about-img {
     position: relative;
     box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+    transition: all ease-in-out 0.3s;
 }
 .about .about-img img{
     max-width: 100%;
@@ -130,7 +123,7 @@ body{
 .about .content h3 {
     font-weight: 600;
     font-size: 26px;
-    color: #fff;
+    color: rgb(15, 15, 15);
 }
 .about .content ul {
     list-style: none;
@@ -258,10 +251,11 @@ body{
     border-radius: 15px;
     font-weight: 600;
     color: #cda45e;
-    transition: width 2s;
+    transition: all ease-in-out 0.3s;  
 }
 .menu-content:hover{
-    width: 279px;
+    padding: 30px 20px 30px 20px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 .menu-img{
     border-radius: 10px;
@@ -350,17 +344,21 @@ body{
     background: #8895a1;
     position: relative;
     overflow: hidden;
+    transition: all ease-in-out 0.3s;
+}
+.chefs .chefs-member:hover{
+    margin: 30px 20px 30px 20px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 .chefs .chefs-member .chefs-info-content h4{
     font-weight: 700;
     margin-top:13px;
-    font-size: 18px;
+    font-size: 22px;
     color: #fff;
 }
 .chefs .chefs-member .chefs-info-content span{
-    font-style: italic;
     display: block;
-    font-size: 13px;
+    font-size: 18px;
     color: #fff;
 }
 .chefs .chefs-member .social a {
